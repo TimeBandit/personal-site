@@ -6,13 +6,11 @@
       href="https://unpkg.com/terminal.css@0.7.2/dist/terminal.min.css"
       />
     <link rel="stylesheet" href="./style.css"/>
-    <title>Imrans Nice Blog</title>
+    <title>{{ title }}</title>
   </head>
   <body>
     <main>
-      
-<h1>This is going to be my site</h1>
-
+      {{ content | safe }}
     </main>
   </body>
 </html>

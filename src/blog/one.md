@@ -1,4 +1,5 @@
 ---
+layout: layout.njk
 tags: blog
 ---
 
