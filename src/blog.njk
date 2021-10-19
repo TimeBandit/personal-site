@@ -1,4 +1,15 @@
 ---
 layout: layout.njk
+eleventyNavigation:
+  key: Blog
 ---
-<p>blog - Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, ipsum labore. Libero quibusdam modi necessitatibus nobis numquam fugiat maiores odio, ea tempore ipsa, officiis, quae eveniet illum molestiae asperiores officia!</p>
+<p>
+  <mark>BLOG</mark>
+  <ol class="terminal-toc">
+    {%- for post in collections.post -%}
+      <li>
+        <a href={{post.url}}>{{ post.data.title }}</a>
+      </li>
+    {%- endfor -%}
+  </ol>
+</p>

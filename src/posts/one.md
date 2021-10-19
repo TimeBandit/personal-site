@@ -1,6 +1,6 @@
 ---
-layout: layout.njk
-tags: blog
+title: the first post
+tags: post
 ---
 
 ## This is the title

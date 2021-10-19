@@ -6,7 +6,8 @@
   "scripts": {
     "test": "npm run test",
     "build": "npx @11ty/eleventy",
-    "serve": "npx @11ty/eleventy --serve"
+    "serve": "npx @11ty/eleventy --serve",
+    "debug": "DEBUG=Eleventy* npx @11ty/eleventy --serve"
   },
   "keywords": [
     "blog",
@@ -16,6 +17,7 @@
   "author": "imran nazir",
   "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "^0.12.1"
+    "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy-navigation": "^0.3.2"
   }
 }
