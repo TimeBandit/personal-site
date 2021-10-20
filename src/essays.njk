@@ -2,24 +2,14 @@
 layout: layout.njk
 eleventyNavigation:
   key: Essays
+title: Essays 🧠
 ---
 <p>
-  <mark>ESSAYS</mark>
   <ol class="terminal-toc">
-    <li>
-      <a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</a>
-    </li>
-    <li>
-      <a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</a>
-    </li>
-    <li>
-      <a href="#">Aliquam tincidunt mauris eu risus.</a>
-    </li>
-    <li>
-      <a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</a>
-    </li>
-    <li>
-      <a href="#">Aliquam tincidunt mauris eu risus.</a>
-    </li>
+    {%- for essay in collections.essay -%}
+      <li>
+        <a href={{essay.url}}>{{ essay.data.title }}</a>
+      </li>
+    {%- endfor -%}
   </ol>
 </p>

@@ -1,16 +1,54 @@
-<nav class="terminal-nav">
-  <div class="terminal-logo">
-    <div class="logo terminal-prompt">
-      <a href="#" class="no-style">mrnazir.dev</a>
+{# <div class="terminal-nav">
+  </div> #}
+<div class="terminal-logo">
+  <div class="logo terminal-prompt">
+    <a href="#" class="no-style">mrnazir.dev</a>
+  </div>
+</div>
+{# <nav class="terminal-menu">
+    {% set navPages = collections.all | eleventyNavigation %}
+    <ul>
+      {%- for entry in navPages %}
+        <li>
+          <a href="{{ entry.url | url }}" {% if entry.url == page.url %} class="menu-item active"{% endif %}>{{ entry.title }}</a>
+        </li>
+      {%- endfor %}
+      <ul></nav>
     </div>
-    <nav class="terminal-menu">
-      {% set navPages = collections.all | eleventyNavigation %}
+  </nav> #}
+<nav>
+  {% set navPages = collections.all | eleventyNavigation %}
+  <ul>
+    {%- for entry in navPages %}
+      <li>
+        <a href="{{ entry.url | url }}" {% if entry.url == page.url %} class="menu-item active"{% endif %}>{{ entry.title }}</a>
+      </li>
+    {%- endfor %}
+    <ul>
+      {# <ul>
+    <li>
+      <a href="#">Dashboard</a>
+    </li>
+    <li>
+      <a href="#">Members</a>
+    </li>
+    <li>
+      <a href="#">Settings</a>
+    </li>
+    <li>
+      <a href="#">Profile</a>
       <ul>
-        {%- for entry in navPages %}
-          <li>
-            <a href="{{ entry.url | url }}" {% if entry.url == page.url %} class="menu-item active"{% endif %}>{{ entry.title }}</a>
-          </li>
-        {%- endfor %}
-        <ul></nav>
-      </div>
+        <li>
+          <a href="#">Account</a>
+        </li>
+        <li>
+          <a href="#">Billing</a>
+        </li>
+        <li>
+          <a href="#">Logout</a>
+        </li>
+      </ul>
+    </li>
+  </ul> #}
     </nav>
+  </div>
