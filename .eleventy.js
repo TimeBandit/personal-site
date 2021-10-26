@@ -6,7 +6,8 @@ module.exports = function(eleventyConfig) {
   
   eleventyConfig.addPassthroughCopy("./src/style.css");
   eleventyConfig.addPassthroughCopy("./src/satoshi.css");
-  eleventyConfig.addPassthroughCopy("./src/assets");
+  eleventyConfig.addPassthroughCopy("./src/assets/fonts");
+  eleventyConfig.addPassthroughCopy("./src/assets/images");
   
   // Return your Object options:
   return {

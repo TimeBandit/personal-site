@@ -22,3 +22,13 @@ a.active {
   background-color: var(--primary-color);
   color: var(--invert-font-color);
 }
+
+.figure__image {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
+.figure__caption {
+  text-align: left;
+}

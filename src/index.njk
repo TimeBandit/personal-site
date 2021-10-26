@@ -2,8 +2,13 @@
 layout: layout.njk
 eleventyNavigation:
   key: Home
-title: Hi 👋🏼
+title: mrnazir.dev
+unsplashAttribution: Photo by <a href="https://unsplash.com/@anniespratt">Annie Spratt</a> on <a href="https://unsplash.com/s/photos/kashmir">Unsplash</a>
+  
 ---
+<figure class="figure">
+  <img src="/assets/images/annie-spratt-7AvYdG-5504-unsplash.jpg" alt="Flowers in Kashmir" class="figure__image" loading=lazy>
+</figure>
 
 <section>
   <p>About me</p>
@@ -14,3 +19,5 @@ title: Hi 👋🏼
 <sections>
   <p>Ways to contact me</p>
 </sections>
+
+<figcaption class="figure__caption">{{ unsplashAttribution | safe }}</figcaption>

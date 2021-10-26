@@ -2,8 +2,14 @@
 layout: layout.njk
 eleventyNavigation:
   key: Essays
-title: Essays 🧠
+title: mrnazir.dev
+unsplashAttribution: Photo by <a href="https://unsplash.com/@tingeyinjurylawfirm">Tingey Injury Law Firm</a> on <a href="https://unsplash.com/s/photos/thought">Unsplash</a>
+  
 ---
+<figure class="figure">
+  <img src="/assets/images/tingey-injury-law-firm-LJhXYHxPfEY-unsplash.jpg" alt="Flowers in Kashmir" class="figure__image" loading=lazy>
+</figure>
+
 <p>
   <ol class="terminal-toc">
     {%- for essay in collections.essay -%}
@@ -13,3 +19,5 @@ title: Essays 🧠
     {%- endfor -%}
   </ol>
 </p>
+
+<figcaption class="figure__caption">{{ unsplashAttribution | safe }}</figcaption>
