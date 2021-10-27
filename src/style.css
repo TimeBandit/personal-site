@@ -31,4 +31,9 @@ a.active {
 
 .figure__caption {
   text-align: left;
+  color: #e8eff2;
+}
+
+.figure__caption a {
+  color: #e8eff2;
 }
