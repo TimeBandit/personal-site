@@ -2,9 +2,7 @@
   {% set navPages = collections.all | eleventyNavigation %}
   <ul>
     {%- for entry in navPages %}
-      <li>
-        <a href="{{ entry.url | url }}" {% if entry.url == page.url %} class="menu-item active"{% endif %}>{{ entry.title }}</a>
-      </li>
+      {% navListItemShortcode entry %}
     {%- endfor %}
   </ul>
   <hr>
