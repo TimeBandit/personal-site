@@ -1,5 +1,4 @@
 function getListItemClass(entryUrl, pageUrl) {
-  console.log(`PARSING ROUTES ${entryUrl} ${pageUrl}`)
   if(entryUrl === '/'){
     if(pageUrl === '/'){
       return 'active'
@@ -12,7 +11,7 @@ function getListItemClass(entryUrl, pageUrl) {
 }
 
 async function navListItemShortcode(entry) {
-  
+  console.log("BUILDING...😸");
   const listItemClass = getListItemClass(entry.url, this.page.url);
   
   return `<li>
