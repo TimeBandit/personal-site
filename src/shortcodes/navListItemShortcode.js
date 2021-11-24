@@ -14,7 +14,6 @@ function getListItemClass(entryUrl, pageUrl) {
 async function navListItemShortcode(entry) {
   
   const listItemClass = getListItemClass(entry.url, this.page.url);
-  console.log(this.page);
   
   return `<li>
         <a href=${entry.url} class="${"menu-item " + listItemClass}">
