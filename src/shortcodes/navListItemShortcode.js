@@ -1,4 +1,5 @@
 function getListItemClass(entryUrl, pageUrl) {
+  console.info(`URL, nav:${entryUrl}, page:${pageUrl}`)
   if(entryUrl === '/'){
     if(pageUrl === '/'){
       return 'active'
