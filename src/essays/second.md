@@ -1,5 +1,7 @@
 ---
 title: the second post
+description: 
+date: 
 tags: essay
 ---
 

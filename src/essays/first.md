@@ -1,5 +1,7 @@
 ---
 title: the first essay
+description: 
+date: 
 tags: essay
 ---
 

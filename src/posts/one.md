@@ -1,5 +1,7 @@
 ---
 title: So you think you can code
+description: 
+date: 
 tags: post
 ---
 
