@@ -1,13 +1,13 @@
 ---
 layout: layouts/layout.njk
 title: mrnazir.dev
-imgUrl: https://images.unsplash.com/photo-1505129039666-fd1461c14ce5
+featuredImage: https://images.unsplash.com/photo-1505129039666-fd1461c14ce5
 unsplashAttribution: Photo by <a href="https://unsplash.com/@anniespratt">Annie Spratt</a> on <a href="https://unsplash.com/s/photos/kashmir">Unsplash</a>
   
 ---
 
 <figure class="figure">
-  {% image imgUrl, "figure__image",
+  {% image featuredImage, "figure__image",
   "Wild flowers", "(max-width: 300px)"
    %}
   <figcaption class="figure__caption">{{ unsplashAttribution | safe }}</figcaption>
