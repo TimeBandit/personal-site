@@ -4,12 +4,12 @@ eleventyNavigation:
   key: Posts
   title: Tech
 title: mrnazir.dev
-imgUrl: https://images.unsplash.com/photo-1510922903530-28ecf3f00362
+featuredImage: https://images.unsplash.com/photo-1510922903530-28ecf3f00362
 unsplashAttribution: Photo by <a href="https://unsplash.com/@bookblock">Bookblock</a> on <a href="https://unsplash.com/s/photos/journal">Unsplash</a>
   
 ---
 <figure class="figure">
-  {% image imgUrl, "figure__image",
+  {% image featuredImage, "figure__image",
   "Jounal on a desk", "(max-width: 300px)"
    %}
   <figcaption class="figure__caption">{{ unsplashAttribution | safe }}</figcaption>
