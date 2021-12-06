@@ -1,7 +1,7 @@
 backend:
-  name: git-gateway
-  repo: TimeBandit/personal-site
-  branch: master # Branch to update (optional; defaults to master)
+  name: github
+  repo: timebandit/personal-site
+  branch: main # Branch to update (optional; defaults to master)
 publish_mode: editorial_workflow
 media_folder: "assets/images" # Media files will be stored in the repo under assets/images
 public_folder: "/assets/images" # The src attribute for uploaded media will begins /assets/images
