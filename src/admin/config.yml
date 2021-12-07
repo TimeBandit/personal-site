@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  repo: TimeBandit/personal-site
+  repo: timebandit/personal-site
   branch: main # Branch to update (optional; defaults to master)
 publish_mode: editorial_workflow
 media_folder: "assets/images" # Media files will be stored in the repo under assets/images
@@ -15,6 +15,18 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Description", name: "description", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Featured Image", name: "featuredImage", widget: "image"}
-      - {label: "Tags", name: "tags", widget: "list"}
+      - {label: "Featured Image", name: "image", widget: "image", required: false}
+      - {label: "Tags", name: "tags", widget: "list", default: ["post"]}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "essays" # Used in routes, e.g., /admin/collections/blog
+    label: "Essays" # Used in the UI
+    folder: "src/essays" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Featured Image", name: "image", widget: "image", required: false}
+      - {label: "Tags", name: "tags", widget: "list", default: ["essay"]}
       - {label: "Body", name: "body", widget: "markdown"}
