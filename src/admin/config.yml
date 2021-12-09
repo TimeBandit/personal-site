@@ -15,7 +15,8 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Description", name: "description", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Featured Image", name: "image", widget: "image", required: false}
+      - {label: "Featured Image", name: "imageSrc", widget: "image", required: false}
+      - {label: "Image Description", name: "imageAlt", widget: "string", required: false}
       - {label: "Tags", name: "tags", widget: "list", default: ["post"]}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "essays" # Used in routes, e.g., /admin/collections/blog
@@ -27,6 +28,7 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Description", name: "description", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Featured Image", name: "image", widget: "image", required: false}
+      - {label: "Featured Image", name: "imageSrc", widget: "image", required: false}
+      - {label: "Image Description", name: "imageAlt", widget: "string", required: false}
       - {label: "Tags", name: "tags", widget: "list", default: ["essay"]}
       - {label: "Body", name: "body", widget: "markdown"}

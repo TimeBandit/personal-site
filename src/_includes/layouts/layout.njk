@@ -13,6 +13,12 @@
           {% include 'nav.njk' %}
         </aside>
         <main>
+          {% if imageSrc %}
+          <figure class="figure">
+            {% image imageSrc, "figure__image", imageAlt, "(max-width: 300px)" %}
+            <figcaption class="figure__caption">{{ imageAttr | safe }}</figcaption>
+          </figure>
+          {% endif %}
           {{ content | safe }}
         </main>
       </div>
