@@ -14,6 +14,7 @@ async function imageShortcode(src, cls, alt, sizes) {
     sizes,
     loading: "lazy",
     decoding: "async",
+    title: alt
   };
 
   // You bet we throw an error on missing alt in `imageAttributes` (alt="" works okay)
