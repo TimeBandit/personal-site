@@ -25,7 +25,7 @@ function myCustomSnippet(value){
 
 ## Copyright Notices
 
-What follows is not legal advice, please do your own research. Although not mandatory, a copyright notice can protect your work and deter people from stealing your content. Having one costs nothing so why not? Many websites typically place their notice in the footer of their site so that it is visible on every page. Copyright notices are typically formatted like so: `Copyright © [Year] [Copyright owners name]`
+What follows is not legal advice, please do your own research. Although not mandatory, a copyright notice can protect your work and deter people from stealing your content. Having one costs nothing so why not? Many websites typically place their notice in the footer of their site so that it is visible on every page. Copyright notices are typically formatted like this: `Copyright © [Year] [Copyright owners name]`
 
 ## Building it
 
