@@ -80,6 +80,7 @@ module.exports = function(eleventyConfig) {
 
 {% endraw %}
 
+\
 ### Using your new shortcode inside a template
 
 Now we can add it to whichever template file needs it. Here i'm adding it to `footer.njk`. The shortcode (function) we decalred is now globally available inside any Nunjucks template as `copyRightNotice` and we can pass its function parameters without parenthesis after the name of the function.
@@ -93,4 +94,5 @@ Now we can add it to whichever template file needs it. Here i'm adding it to `fo
 
 {% endraw %}
 
+\
 To see this in action see this bottom of this page.
