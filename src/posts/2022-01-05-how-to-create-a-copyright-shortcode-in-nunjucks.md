@@ -26,3 +26,25 @@ function myCustomSnipper(value){
 ## Copyright Notices
 
 What follows is not legal advice, please do your own research. Although not mandatory a copy right notice can protect and deter people from stealing you content. Having one costs nothing so why not? Many website typically place their notice in their footer so that it is visible on every page. Copyright notices are typically formatted like this `Copyright © [Year] [Copyright owners name]`
+
+## Building it
+
+Within a file of the same name lets create our copyright notice generator.
+
+```javascript
+/**
+ * 
+ * @param {string} content the copyright owner 
+ * @returns 
+ */
+function copyrightNoticeShortcode(content) {
+  const currentYear = new Date().getFullYear();
+  
+  return `<small>
+        Copyright\&copy; ${currentYear} ${content}. All Rights Reserved
+      </small>`;
+}
+
+module.exports = copyrightNoticeShortcode;
+
+```
