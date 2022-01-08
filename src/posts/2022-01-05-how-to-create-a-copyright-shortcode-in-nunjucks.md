@@ -25,4 +25,4 @@ function myCustomSnipper(value){
 
 ## Copyright Notices
 
-Although not mandatory a copy right notice can protect and deter people from stealing you content. Having one costs nothing so why not?
+What follows is not legal advice, please do your own research. Although not mandatory a copy right notice can protect and deter people from stealing you content. Having one costs nothing so why not? Many website typically place their notice in their footer so that it is visible on every page. Copyright notices are typically formatted like this `Copyright © [Year] [Copyright owners name]`
