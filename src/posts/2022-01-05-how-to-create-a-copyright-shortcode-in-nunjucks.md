@@ -11,6 +11,18 @@ tags:
 ---
 In this brief post I'll describe the process of automating your website copyright notice with Eleventy (11ty).
 
-11ty is a popular static site generator you can use with a templating language to build a website as a set of static files. The beauty of this is that you can use data from API's and files at build time. This means that you can trigger a fresh build each time your data changes.
+## Intro
 
-[Nunjucks](https://mozilla.github.io/nunjucks/) is one such templating language. Others examples are [Pug](https://pugjs.org/api/getting-started.html) or [Handlebars](https://handlebarsjs.com/). Shortcodes  Nunjucks are
+11ty is a popular static site generator you can use with a templating language to build a website as a set of static files. The beauty of this is that you can use data from API's and files at build time to create your pages. This also,  means that you can trigger a fresh build each time your data changes.
+
+[Nunjucks](https://mozilla.github.io/nunjucks/) is one such templating language. Others examples are [Pug](https://pugjs.org/api/getting-started.html) or [Handlebars](https://handlebarsjs.com/). Shortcodes are a feature of 11ty where it extends the templating language to allow you to declare and use functions you define that generate customer HTML. For example:
+
+```javascript
+function myCustomSnipper(value){
+    return `<h1>Get me ${value} dognuts</h1>`
+}
+```
+
+## Copyright Notices
+
+Although not mandatory a copy right notice can protect and deter people from stealing you content. Having one costs nothing so why not?
