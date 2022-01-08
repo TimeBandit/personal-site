@@ -23,6 +23,8 @@ function myCustomSnippet(value){
 }
 ```
 
+<br>
+
 ## Copyright Notices
 
 What follows is not legal advice, please do your own research. Although not mandatory, a copyright notice can protect your work and deter people from stealing your content. Having one costs nothing so why not? Many websites typically place their notice in the footer of their site so that it is visible on every page. Copyright notices are typically formatted like so: `Copyright © [Year] [Copyright owners name]`
@@ -31,6 +33,7 @@ What follows is not legal advice, please do your own research. Although not mand
 
 Within a file of the same name lets create our copyright notice generator.
 
+{% raw %}
 ```javascript
 // copyrightNoticeShortcode.js
 
@@ -51,9 +54,13 @@ function copyrightNoticeShortcode(content) {
 
 module.exports = copyrightNoticeShortcode;
 ```
+{% endraw %}
+
+<br>
 
 Now lets add this to 11ty's configuration file `.eleventy.js`
 
+{% raw %}
 ```javascript
 // .eleventy.js
 
@@ -67,12 +74,19 @@ module.exports = function(eleventyConfig) {
   );
 }
 ```
+{% endraw %}
 
-Now we can add it to whichever template file we wish to. Here i'm adding it to `footer.njk`. The shortcode (function) we decalred is now globally available inside any Nunjucks template as `copyRightNotice` and we can pass its function parameters without parenthesis after the name of the function.
+<br>
 
+Now we can add it to whichever template file needs it. Here i'm adding it to `footer.njk`. The shortcode (function) we decalred is now globally available inside any Nunjucks template as `copyRightNotice` and we can pass its function parameters without parenthesis after the name of the function.
+
+{% raw %}
 ```html
 {# footer.njk #}
 <footer class="footer">{% copyrightNotice "Bart Simpson" %}</footer>
 ```
+{% endraw %}
+
+<br>
 
 To see this in action see this bottom of this page.

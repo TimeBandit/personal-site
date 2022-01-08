@@ -6,8 +6,8 @@ publish_mode: editorial_workflow
 media_folder: "assets/images" # Media files will be stored in the repo under assets/images
 public_folder: "/assets/images" # The src attribute for uploaded media will begins /assets/images
 collections:
-  - name: "blog" # Used in routes, e.g., /admin/collections/blog
-    label: "Blog" # Used in the UI
+  - name: "post" # Used in routes, e.g., /admin/collections/blog
+    label: "Tech Posts" # Used in the UI
     folder: "src/posts" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md

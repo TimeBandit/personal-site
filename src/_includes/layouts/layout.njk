@@ -5,7 +5,7 @@
     <div class="container">
       <div class="terminal-logo">
         <div class="logo terminal-prompt">
-          <a href="/" class="no-style">mrnazir.dev</a>
+          <a href="/" class="no-style">imran-nazir.com</a>
         </div>
       </div>
       <div class="component components-grid">
@@ -14,12 +14,13 @@
         </aside>
         <main>
           {% if imageSrc %}
-          <figure class="figure">
-            {% image imageSrc, "figure__image", imageAlt, "(max-width: 300px)" %}
-            <figcaption class="figure__caption">{{ imageAttr | safe }}</figcaption>
-          </figure>
+            <figure class="figure">
+              {% image imageSrc, "figure__image", imageAlt, "(max-width: 300px)" %}
+              <figcaption class="figure__caption">{{ imageAttr | safe }}</figcaption>
+            </figure>
           {% endif %}
           {{ content | safe }}
+          {% include 'footer.njk' %}
         </main>
       </div>
     </div>
