@@ -32,6 +32,8 @@ What follows is not legal advice, please do your own research. Although not mand
 Within a file of the same name lets create our copyright notice generator.
 
 ```javascript
+// copyrightNoticeShortcode.js
+
 /**
  * 
  * @param {string} content the copyright owner 
@@ -46,9 +48,29 @@ function copyrightNoticeShortcode(content) {
 }
 
 module.exports = copyrightNoticeShortcode;
-
 ```
 
 Now lets add this to 11ty's configuration file `.eleventy.js`
 
-``
+```javascript
+// .eleventy.js
+
+const copyrightNoticeShortcode = require("./src/shortcodes/copyrightNoticeShortcode");
+
+module.exports = function(eleventyConfig) {
+  // we extents Nunjucks here with our shortcode
+  eleventyConfig.addNunjucksShortcode(
+    "copyrightNotice",
+    copyrightNoticeShortcode
+  );
+}
+```
+
+Now we use it. The shortcode (function) we decalred is now globally available in the template as `copyRightNotice` and we can pass is function parameters without parenthesis after the name of the function.
+
+```html
+{# footer.njk #}
+<footer class="footer">{% copyrightNotice "Bart Simpson" %}</footer>
+```
+
+To see this in action see this bottom of this page.
