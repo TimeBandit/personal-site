@@ -48,3 +48,7 @@ function copyrightNoticeShortcode(content) {
 module.exports = copyrightNoticeShortcode;
 
 ```
+
+Now lets add this to 11ty's configuration file `.eleventy.js`
+
+``
