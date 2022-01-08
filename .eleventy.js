@@ -1,5 +1,6 @@
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
-const imageShortcode = require('./src/shortcodes/imageShortCode');
+const copyrightNoticeShortcode = require("./src/shortcodes/copyrightNoticeShortcode");
+const imageShortcode = require('./src/shortcodes/imageShortcode');
 const navListItemShortcode = require('./src/shortcodes/navListItemShortcode');
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
@@ -26,6 +27,11 @@ module.exports = function(eleventyConfig) {
     "navListItemShortcode",
     navListItemShortcode
   );
+  eleventyConfig.addNunjucksShortcode(
+    "copyrightNotice",
+    copyrightNoticeShortcode
+  );
+  
   
   // Return your Object options:
   return {
