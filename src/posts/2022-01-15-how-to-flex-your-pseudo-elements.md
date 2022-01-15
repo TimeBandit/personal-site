@@ -5,8 +5,7 @@ description: A post describing how pseudo elements can be aligned using the flex
 date: 2022-01-15T15:38:17.053Z
 imageSrc: /assets/images/edgar-chaparro-shfo3woggtu-unsplash.jpg
 imageAlt: image
-imageAttr: 'Photo by <a
-  href="https://unsplash.com/@echaparro?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Edgar
+imageAttr: 'Photo by <a href="https://unsplash.com/@echaparro">Edgar
   Chaparro</a> on <a href="https://unsplash.com/s/photos/flex">Unsplash</a>   '
 tags:
   - post
