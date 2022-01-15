@@ -11,13 +11,27 @@ imageAttr: 'Photo by <a
 tags:
   - post
 ---
-Even if you've been creating layouts in CSS for a short time you would have come across the \`display\` property known as Flexbox. The introduction of it made it easier to space out and size your elements in one dimension. Be that horizontal or vertical. Previous to this, developers used the \`float\` property to pop ytheir elements out of the normal flow of the page. This made them behave like a bouant object floating to the top of a body of water and then moving to the left or the right. It worked but elements on the next row would sometimes get stuck on the end of a tall item above it if it was supposed to float to the same direction. Hacks had to be used to get around this.
+If you've created layouts in CSS you would have come across the \`display\` property known as Flexbox. Its introduction made it easier to space out and size your elements in one dimension; horizontal or vertical. 
 
-This display property along with it's cousin `grid` is uaually used by devs with block level elements such as `div` and `p`. However did you know that they could be applied to pseudo elements too. Psuedo elements are a neat way to decorate your content without really alteraring the actual readable html content itself. This means that no DOM element is rendered. For a useful discussion on their pros and cons see [this](https://stackoverflow.com/questions/15574608/benefits-drawbacks-of-using-pseudo-elements-after-before-vs-padding-backgr).
 
-DOM elements can have a maximum of two pseudo elements known as \`before\` and \`after\`. Howver they behave as though they are children of the element to which they are attached. This means the the display property \`flex\` must be applies to that. After this you can use Flexbox properties to adjust the layout of the DOM content and the psedo elements.
 
-The example below is a practical example of what i've described above.
+Previous to this, developers used the \`float\` property to pop their elements out of the normal flow of the page. It made them behave like buoyant objects floating to the top of a body of water and then moving to the left or the right. It worked, but elements on the next row would sometimes get stuck on the back of a tall item above it. Hacks had to be used to get around this.
+
+
+
+This \`display: flex\` property and its cousin \`display: grid\` changed this. Front-end engineers applied it to block-level elements such as \`div\` and \`p\`, making them behave as flex items. However, did you know that they act on pseudo-elements too? 
+
+
+
+Pseudo-elements are a neat way to decorate your content without altering the actual Html content itself. It means that no DOM element renders. For a discussion on the pros and cons of pseudo-elements, you can read [this](https://stackoverflow.com/questions/15574608/benefits-drawbacks-of-using-pseudo-elements-after-before-vs-padding-backgr) article.
+
+
+
+DOM elements can have a maximum of two pseudo-elements known as \`before\` and \`after\`. However, they behave as though they are child elements of the element to which they are attached. To make pseudo-element behave as flexbox items you apply the \`display: flex\` property to the DOM element.
+
+
+
+The Codepen below is a practical example of what I've described in this post.
 
 <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="yLzZPrg" data-user="timeband-it" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/timeband-it/pen/yLzZPrg">
