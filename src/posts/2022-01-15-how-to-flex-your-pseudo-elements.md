@@ -3,10 +3,10 @@ title: How To Flex Your Pseudo Elements
 description: A post describing how pseudo elements can be aligned using the flex
   display property.
 date: 2022-01-15T15:38:17.053Z
-imageSrc: /assets/images/edgar-chaparro-shfo3woggtu-unsplash.jpg
-imageAlt: image
-imageAttr: 'Photo by <a href="https://unsplash.com/@echaparro">Edgar
-  Chaparro</a> on <a href="https://unsplash.com/s/photos/flex">Unsplash</a>   '
+imageSrc: https://images.unsplash.com/photo-1611664751640-45403155e7de
+imageAlt: Beautiful ornamental cherry (pseudo-sakura) in a russian garden
+  close-up. Stylish delicate pink blooming flowers
+imageAttr: ""
 tags:
   - post
 ---
