@@ -9,4 +9,6 @@ imageAttr: 'Photo by <a href="https://unsplash.com/@rikonavt">Rikonavt</a> on <a
 tags:
   - post
 ---
-sdf
+During a study session last week I learn about CSS logical properties and I wanted to share the images in my mind I generate to make sense of this concept.
+
+Imaginge youre building a house. You would follow an archtectural plan. You would construct the walls according the the dimensions specified. You would place the roof on the top to protect you being esposed to the weather from above. You would fir windows in the walls that would give you the best chance
