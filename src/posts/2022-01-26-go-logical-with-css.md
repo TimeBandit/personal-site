@@ -9,8 +9,16 @@ imageAttr: 'Photo by <a href="https://unsplash.com/@rikonavt">Rikonavt</a> on <a
 tags:
   - post
 ---
-Imaginge youre building a house. What would that look like? Lets say you or the builder follows an archtectural plan. Where would you begin? Perhaps you would start with the foundations, then build up the walls to a certain height according to the dimensions specified. The roof could be constructed and placed ontop of your walls to protect you from being exposed to the weather from above. If you lived in northern Europe you might place the windows in the north and south facing walls to give you a more constant level of light. 
+Imagine you're building a house. What would that look like? Let's say you follow an architectural plan. Where would you begin?
 
-What then if your house was transported to a different world, where the sun rose in the north and it rained not from the top but from the right. You would need to knock down some walls and restructure the house. What then if the house could understand the context of it's setting and could reconfigure itself in the new world. So the roof would shift to where the right wall is and the windows would move the the east and west walls. We could say that the house is doiong what makes logical sense for it to do.
+Would start at the foundations, building up the walls to match the plan? You could construct the roof in one piece and place it on top of the walls when complete. Good; now the interior isn't exposed to the elements from above anymore.
 
-This is what CSS logical properties are. It is when your layout reconfigures itself to what makes logical sense. In the case of the house we build on another world the variables were the angle of sunrise and sunset and the direction of the weather. With CSS logical properties the are (not nessecarily restricted to) writing direction and
+Where you place the windows affects how light enters the house. You the windows in the north and south face projections of the house. You now have a more consistent level of light in your house during the day.
+
+Your house is now on a different world. On this world, the sun rises in the north and it rains parallel to the ground from the east. The house you build is no longer fit for purpose!
+
+Imagine a house that detects its surroundings. So the roof would slide to where the right wall is and the windows would move the east walls. We could say that the house is doing what makes logical sense for it to do.
+
+This is what CSS logical properties are. Your layout understands its context and reconfigures to what makes logical sense.
+
+The suns path across the sky and the weather incline are the context variables in the above scenario. These variables trigger a change of layout. With CSS logical properties your context is the direction
