@@ -15,11 +15,7 @@ Would you start at the foundations, building up the walls to match the plan? You
 
 Where you place the windows affects how light enters the house. So, you fit the windows in the north and south-facing projections of the house.
 
-
-
 Your house is now taken to a different world. On this world, the sun rises in the north and it rains parallel to the ground from the east. The house you built is no longer fit for purpose!
-
-
 
 Imagine a house that reacted to its surroundings. So the roof would slide to the west wall and the windows would move the east walls. We could say that the house is doing what makes logical sense for it to do without any effort from you.
 
@@ -30,24 +26,22 @@ The suns path across the sky and the incline of the weather trigger changes in t
 With \[CSS logical properties]\[1] your main triggers are the \`writing-mode\` and \`dir\` (directionality) .
 
 > The \[writing-mode]\[2] [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) property sets whether lines of text are laid out horizontally or vertically, as well as the direction in which blocks progress. When set for an entire document, it should be set on the root element (html element for HTML documents).
->
+
+
+
 > The dir [global attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes) is an enumerated attribute that indicates the directionality of the element's text.
 
 Below we've style the highlighted region with \`border-inline-start\`. This adds a border to where the text starts. Click the checkboxes to change the directionality between \`rtl\` (right-to-left) and \`ltr\` (left-to-right).
 
 
-
+{% raw %}
 <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="xxPwgNp" data-user="timeband-it" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-
 <span>See the Pen <a href="https://codepen.io/timeband-it/pen/xxPwgNp">
-
-Writing Mode</a> by Imran Nazir (<a href="https://codepen.io/timeband-it">@timeband-it</a>)
-
-on <a href="https://codepen.io">CodePen</a>.</span>
-
+Writing Mode</a> by Imran Nazir (<a href="https://codepen.io/timeband-it">@timeband-it</a>)on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+{% endraw %}
 
 This simple example illustrates how logical properties make internationalization of your site easier.
 
