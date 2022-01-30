@@ -45,7 +45,8 @@ Writing Mode</a> by Imran Nazir (<a href="https://codepen.io/timeband-it">@timeb
 {% endraw %}
 
 &nbsp  
-I hope that you can see from this simple example how logical properties make it easier to layout content in different languages.
+
+\`border-inline-start\` is one example see the documentation to understand how `writing-mode` affects it. I hope that you can see from this simple example how logical properties make it easier to layout content in different languages. 
 
 [1]: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Logical_Properties ""
 [2]: https://developer.mozilla.org/en-US/docs/Web/CSS/writing-mode "CSS logical properties"
