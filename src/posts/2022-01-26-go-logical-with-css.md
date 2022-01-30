@@ -25,12 +25,11 @@ The suns path across the sky and the incline of the weather trigger changes in t
 
 With \[CSS logical properties]\[1] your main triggers are the \`writing-mode\` and \`dir\` (directionality) .
 
-> The \[writing-mode]\[2] [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) property sets whether lines of text are laid out horizontally or vertically, as well as the direction in which blocks progress. When set for an entire document, it should be set on the root element (html element for HTML documents).
+> The \[writing-mode]\[2] [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) property sets whether lines of text are laid out horizontally or vertically, as well as the direction in which blocks progress. When set for an entire document, it should be set on the root element (HTML element for HTML documents).
 
 > The dir [global attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes) is an enumerated attribute that indicates the directionality of the element's text.
 
-Below we've style the highlighted region with \`border-inline-start\`. This adds a border to where the text starts. Click the checkboxes to change the directionality between \`rtl\` (right-to-left) and \`ltr\` (left-to-right).
-
+Below we've styled the highlighted region with \`border-inline-start\`. This adds a border to where the text starts. Click the checkboxes to change the directionality between \`rtl\` (right-to-left) and \`ltr\` (left-to-right).
 
 {% raw %}
 <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="xxPwgNp" data-user="timeband-it" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
@@ -40,6 +39,7 @@ Writing Mode</a> by Imran Nazir (<a href="https://codepen.io/timeband-it">@timeb
 
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 {% endraw %}
+
 
 I hope that you can see from this simple example how logical properties make it easier to layout content in different languages.
 
