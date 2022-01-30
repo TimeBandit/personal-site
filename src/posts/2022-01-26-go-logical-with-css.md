@@ -27,8 +27,6 @@ With \[CSS logical properties]\[1] your main triggers are the \`writing-mode\` a
 
 > The \[writing-mode]\[2] [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) property sets whether lines of text are laid out horizontally or vertically, as well as the direction in which blocks progress. When set for an entire document, it should be set on the root element (html element for HTML documents).
 
-
-
 > The dir [global attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes) is an enumerated attribute that indicates the directionality of the element's text.
 
 Below we've style the highlighted region with \`border-inline-start\`. This adds a border to where the text starts. Click the checkboxes to change the directionality between \`rtl\` (right-to-left) and \`ltr\` (left-to-right).
@@ -43,8 +41,7 @@ Writing Mode</a> by Imran Nazir (<a href="https://codepen.io/timeband-it">@timeb
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 {% endraw %}
 
-This simple example illustrates how logical properties make internationalization of your site easier.
+I hope that you can see from this simple example how logical properties make it easier to layout content in different languages.
 
 [1]: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Logical_Properties ""
-
 [2]: https://developer.mozilla.org/en-US/docs/Web/CSS/writing-mode "CSS logical properties"
