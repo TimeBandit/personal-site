@@ -23,6 +23,8 @@ This idea is close to what CSS logical properties are for. Your layout understan
 
 The suns path across the sky and the incline of the weather trigger changes in the house.
 
+<hr>
+
 With \[CSS logical properties]\[1] your main triggers are the \`writing-mode\` and \`dir\` (directionality) .
 
 > The \[writing-mode]\[2] [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) property sets whether lines of text are laid out horizontally or vertically, as well as the direction in which blocks progress. When set for an entire document, it should be set on the root element (HTML element for HTML documents).
