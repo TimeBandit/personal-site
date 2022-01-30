@@ -45,6 +45,6 @@ Writing Mode</a> by Imran Nazir (<a href="https://codepen.io/timeband-it">@timeb
 
 This simple example illustrates how logical properties make internationalization of your site easier.
 
-\[1]: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Logical_Properties ""
+[1]: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Logical_Properties ""
 
-\[2]: https://developer.mozilla.org/en-US/docs/Web/CSS/writing-mode "CSS logical properties"
+[2]: https://developer.mozilla.org/en-US/docs/Web/CSS/writing-mode "CSS logical properties"
