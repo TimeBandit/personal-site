@@ -8,6 +8,28 @@ imageAttr: ""
 tags:
   - post
 ---
-A changelog is like a captains log for your repo. It is a simplified breakdown of the features, fixes, bugs or other types of updates that were made and merged into your main branch.
+A changelog is like a captains log for your repo. It is a simplified history of all the work that went into your repository. Changelogs derive from your commit messages. Creating good quality commit messages will, in turn, lead to beautiful changelogs. Changelogs are usually in markdown form, making them easier to read and format. They are usually stored at the root level of the project.
 
-Creating changelogs will illustrate the importance of good commit messages. To get into a good habit with commit messages I would recommend using some form of commit helper extension. For example, if you use VScode you could use [Commitizen](https://marketplace.visualstudio.com/items?itemName=KnisterPeter.vscode-commitizen) extension.
+
+
+There are tools that make commits easy. For example, for VScode there is the [Commitizen](https://marketplace.visualstudio.com/items?itemName=KnisterPeter.vscode-commitizen) extension. It will guide you through making a well-documented commit.
+
+
+
+I'll describe an easy way and a more involved way. They will not work if you do not have a 'commit' history. If not already the case, ensure the repository is ready by running \`git init\` and making a few commits.
+
+
+
+The easy way.
+
+
+
+Open a terminal at the root of your project. Type
+
+\`\``bash
+
+$ git log --pretty="- %s"
+
+\`\``
+
+This will give you a simplified list of your commit messages.
