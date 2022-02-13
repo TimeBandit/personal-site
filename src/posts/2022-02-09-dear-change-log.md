@@ -20,13 +20,13 @@ The easy way.
 
 Open a terminal at the root of your project. Type
 
-```bash
+```shell
 $ git log --pretty="- %s"
 ```
 
 This will give you a simplified list of your commit messages.
 
-```md
+```markdown
 - Merge pull request #30 from TimeBandit/cms/post/2022-01-15-how-to-flex-your-pseudo-elements
 - Update Tech Posts “2022-01-15-how-to-flex-your-pseudo-elements”
 - Update Tech Posts “2022-01-15-how-to-flex-your-pseudo-elements”
@@ -41,4 +41,4 @@ This will give you a simplified list of your commit messages.
 
 To save it run `$ git log --pretty="- %s" > CHANGELOG.md`
 
-I've given you a very brief introduction to the topic of this post. In the follow-up article, I'll describe something more professional and production ready.
+I've given you a very brief introduction to the topic of this post. In the follow-up article, I'll describe something more professional and production-ready.
