@@ -1,5 +1,5 @@
 ---
-title: Dear Change Log
+title: "Dear Change Log: Part 1 of 2"
 description: Why you need a change log and how to generate them
 date: 2022-02-09T20:37:12.397Z
 imageSrc: https://loremflickr.com/320/240
