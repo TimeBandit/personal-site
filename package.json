@@ -8,7 +8,7 @@
     "build": "npx @11ty/eleventy",
     "serve": "npx @11ty/eleventy --serve",
     "debug": "DEBUG=Eleventy* npx @11ty/eleventy --serve",
-    "release": "standard-version -a"
+    "release": "standard-version"
   },
   "keywords": [
     "blog",
@@ -31,11 +31,6 @@
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-emoji-conventional"
-    }
-  },
-  "standard-version": {
-    "scripts": {
-      "prerelease": "git add CHANGELOG.md"
     }
   }
 }
