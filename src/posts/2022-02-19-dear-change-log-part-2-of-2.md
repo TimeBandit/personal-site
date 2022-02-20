@@ -86,9 +86,7 @@ Your output should look something like this.
 ```markdown
 # Changelog
 
-All notable changes to this project will be documented in this file. 
-See [standard-version](https://github.com/conventional-changelog/standard-version) 
-for commit guidelines.
+All notable changes to this project will be documented in this file.
 
 ## 1.1.0 (2022-02-20)
 
