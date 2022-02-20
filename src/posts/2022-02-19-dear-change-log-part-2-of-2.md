@@ -10,14 +10,82 @@ tags:
 ---
 In the previous post, I described what a changelog was, why they were important and how to make an albeit simple one.
 
-In this post, I'll talk about one way of generating a production-ready changelog.
+In this post, I'll talk about one way of generating a production-ready changelogs.
 
-Before I do that, a little note on versions. Have you ever wondered how versioning works? Download a module or an app and it will have a version number. Giving a version number to a piece of software is not mandatory. Done right, it can help you track down dependencies and lock down a release to the specific versions. 
+Before I do that, a little note on versioning. Have you ever wondered how versioning works? Download a module or an app and it will have a version number. Giving a version number to a piece of software is not mandatory. Done right, it can help you track down dependencies and lock down a release to the specific versions that you know work together.
 
-[SemVer](https://semver.org/) is one common approach to assisting version numbers. [CalVer](https://calver.org/) is an alternative I found but not used. With the former versions take this form; MAJOR.MINOR.PATCH
+[SemVer](https://semver.org/) is one common approach to assigning version numbers. [CalVer](https://calver.org/) is one alternative. With the former, versions numbers take the form; MAJOR.MINOR.PATCH, where all three parts are numbers.
 
-Generally, these are \[Breaking changes].\[Backward compatible changes].\[Bug fixes]
+Generally, these are `[Breaking changes].[Backward compatible changes].[Bug fixes]`. Thus 2.4.5 could mean 2 breaking changes, 4 features and 5 bug or other fixes.
+
+Now conventional commits are a formalized method of constructing commit messages. It dovetails well with SemVer to give you a well-structured commit history. Deriving a structured changelog from your commits becomes easier at this point. Using this your commit messages would take the form:
+
+`<type>[optional scope]: <description>`
+
+Where <type> could be `feat` or `fix` followed by a colon and then a description. You can read more about it [here](https://www.conventionalcommits.org/en/v1.0.0/#summary). There are also tools for this though. You can use [Commitzen](https://github.com/commitizen/) to make guided commits.
+
+Now that's done and you understand the prerequisites let's go through an example. Open a terminal and enter the following
+
+```bash
+# Create a folder and switch into it.
+mkdir changes && cd change
+
+# Initialise the folder as a git repo and a package folder
+# The version property inside your package.json file begins with v1.0,0
+
+git init && npm init -y`
+
+# add a gitinore and tell git to ignore the node_modules folder
+echo "node_modules/" > .gitignore
+
+# install commitizen
+`npm install -g commitizen`
+
+# install the changelog generator called Standard Version
+npm i --save-dev standard-version
+```
+
+Add a release script to the package.json file
+
+```json
+{
+"scripts": {
+"release": "standard-version"
+  }
+}
+```
+
+```bash
+# Stage your changes
+git add --all
+
+# Use Commitizen to make your commit. Make a couple more changes and commits.
+npx cz
+ 
+# Generate a changelog
+npm run release
+```
+
+What happens now: 
+
+* CHANGELOG.md will be generated using your commit history
+* The version number in package.json will be updated.
+* The repo will be tagged and the new version number.
+
+Your output should look something like this.
 
 
 
-Now conventional commits is a formalized method of constructing commit messages. It links well with SemVer to give you a well structured commit history. Good enough for creating well formatted changlogs.
+# Changelog
+
+All notable changes to this project will be documented in this file. See \[standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+\## 1.1.0 (2022-02-20)
+
+\### Features
+
+\* \*\*(init):\** made a new repo 5f684a9
+
+\### Bug Fixes
+
+\* added a gitignore file 2bc9400
