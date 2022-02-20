@@ -46,10 +46,10 @@ git init && npm init -y
 # Add a gitinore and tell git to ignore the node_modules folder
 echo "node_modules/" > .gitignore
 
-# install commitizen
-`npm install -g commitizen`
+# Install commitizen
+npm install -g commitizen
 
-# install the changelog generator called Standard Version
+# Install the changelog generator called Standard Version
 npm i --save-dev standard-version
 ```
 
@@ -63,11 +63,12 @@ Add a release script to the package.json file
 }
 ```
 
-```bash
+```shell
 # Stage your changes
 git add --all
 
-# Use Commitizen to make your commit. Make a couple more changes and commits.
+# Use Commitizen commit your changes.
+# Make a couple more changes and commits.
 npx cz
  
 # Generate a changelog
@@ -76,22 +77,26 @@ npm run release
 
 What happens now: 
 
-* CHANGELOG.md will be generated using your commit history
+* A CHANGELOG.md will be generated using your commit history
 * The version number in package.json will be updated.
-* The repo will be tagged and the new version number.
+* The repo will be tagged with the new version number.
 
 Your output should look something like this.
 
+```markdown
 # Changelog
 
 All notable changes to this project will be documented in this file. See \[standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-\## 1.1.0 (2022-02-20)
+## 1.1.0 (2022-02-20)
 
-\### Features
+### Features
 
-\* \*\*(init):\** made a new repo 5f684a9
+* **(init):** made a new repo 5f684a9
 
-\### Bug Fixes
+### Bug Fixes
 
-\* added a gitignore file 2bc9400
+* added a gitignore file 2bc9400
+```
+
+## Summary
