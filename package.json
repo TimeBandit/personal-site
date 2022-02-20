@@ -33,5 +33,10 @@
     "commitizen": {
       "path": "./node_modules/cz-emoji-conventional"
     }
+  },
+  "standard-version": {
+    "scripts": {
+      "prerelease": "git add CHANGELOG.md"
+    }
   }
 }
