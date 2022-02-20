@@ -1,6 +1,6 @@
 {
   "name": "personal-site",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "description": "my personal site",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
     "build": "npx @11ty/eleventy",
     "serve": "npx @11ty/eleventy --serve",
     "debug": "DEBUG=Eleventy* npx @11ty/eleventy --serve",
-    "release": "HUSKY=1 standard-version",
+    "release": "HUSKY=0 standard-version",
     "prepare": "husky install"
   },
   "keywords": [
