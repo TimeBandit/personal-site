@@ -8,7 +8,8 @@
     "build": "npx @11ty/eleventy",
     "serve": "npx @11ty/eleventy --serve",
     "debug": "DEBUG=Eleventy* npx @11ty/eleventy --serve",
-    "release": "standard-version"
+    "release": "HUSKY_SKIP_HOOKS=1 standard-version",
+    "prepare": "husky install"
   },
   "keywords": [
     "blog",
@@ -25,12 +26,18 @@
     "commitizen": "^4.2.4",
     "cz-conventional-changelog": "^3.3.0",
     "cz-emoji-conventional": "^1.0.1",
+    "husky": "^7.0.4",
     "prismjs": "^1.25.0",
     "standard-version": "^9.3.2"
   },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-emoji-conventional"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
     }
   }
 }
