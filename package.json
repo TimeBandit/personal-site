@@ -8,7 +8,6 @@
     "build": "npx @11ty/eleventy",
     "serve": "npx @11ty/eleventy --serve",
     "debug": "DEBUG=Eleventy* npx @11ty/eleventy --serve",
-    "prerelease": "webpack -p --bail && git add CHANGELOG.md",
     "release": "standard-version -a"
   },
   "keywords": [
