@@ -77,7 +77,7 @@ npm run release
 
 What happens now: 
 
-* A CHANGELOG.md will be generated using your commit history
+* A `CHANGELOG.md` will be generated using your commit history
 * The version number in package.json will be updated.
 * The repo will be tagged with the new version number.
 
@@ -100,3 +100,5 @@ All notable changes to this project will be documented in this file. See \[stand
 ```
 
 ## Summary
+
+We've walked through the automated generation of a changelog, talked about semantic versioning and conventional commits. We've installed packages that help you with both and made a nicely formatted history of your changes in markdown. Pat yourself on the back.
