@@ -14,30 +14,36 @@ In this post, I'll talk about one way of generating a production-ready changelog
 
 Before I do that, a little note on Semantic Version and Conventional Commits. 
 
+## Semantic Versioning
+
 Have you ever wondered how versioning works? Download a module or an app and it will have a version number. Giving a version number to a piece of software is not mandatory. Done right, it can help you track down dependencies and lock down a release to the specific versions that you know work together.
 
 [SemVer](https://semver.org/) is one common approach to assigning version numbers. [CalVer](https://calver.org/) is one alternative amongst others. With SemVer, versions numbers take the form; MAJOR.MINOR.PATCH, where all three parts are numbers.
 
 Generally, these are `[Breaking changes].[Backward compatible changes].[Bug fixes]`. Thus 2.4.5 could mean 2 breaking changes, 4 features and 5 bug or other fixes.
 
-Conventional commits are a formalized method of constructing commit messages. It dovetails well with SemVer to give you a well-structured commit history. Deriving a structured changelog from your commits becomes easier at this point. Using this your commit messages would take the form:
+## Conventional Commits
+
+Conventional commits are a formalized method of constructing commit messages. It dovetails well with SemVer to give you a well-structured commit history. Deriving a structured changelog from your commits becomes easier at this point. Using this method, your commit messages would take the form:
 
 `<type>[optional scope]: <description>`
 
-Where <type> could be `feat` or `fix` followed by a colon and then a description. You can read more about it [here](https://www.conventionalcommits.org/en/v1.0.0/#summary). There are also tools for this though. You can use [Commitzen](https://github.com/commitizen/) to make guided commits.
+Where `<type>` could be `feat` or `fix` followed by a colon and then a description. You can read more about them [here](https://www.conventionalcommits.org/en/v1.0.0/#summary). There are also tools for this though. You can use [Commitzen](https://github.com/commitizen/) to guide you through the commit as you make it.
 
-Now that's done and you understand the prerequisites let's go through an example. Open a terminal and enter the following
+## Example
 
-```bash
+Now that's done and you (hopefully) understand the prerequisites, let's go through an example. Open a terminal and enter the following
+
+```shell
 # Create a folder and switch into it.
 mkdir changes && cd change
 
-# Initialise the folder as a git repo and a package folder
-# The version property inside your package.json file begins with v1.0,0
+# Initialise the folder as a git repo and an npm package
+# Note the version inside your package.json starts at v1.0.0
 
-git init && npm init -y`
+git init && npm init -y
 
-# add a gitinore and tell git to ignore the node_modules folder
+# Add a gitinore and tell git to ignore the node_modules folder
 echo "node_modules/" > .gitignore
 
 # install commitizen
@@ -75,8 +81,6 @@ What happens now:
 * The repo will be tagged and the new version number.
 
 Your output should look something like this.
-
-
 
 # Changelog
 
