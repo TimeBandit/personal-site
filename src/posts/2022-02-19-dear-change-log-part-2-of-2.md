@@ -10,15 +10,17 @@ tags:
 ---
 In the previous post, I described what a changelog was, why they were important and how to make an albeit simple one.
 
-In this post, I'll talk about one way of generating a production-ready changelogs.
+In this post, I'll talk about one way of generating a production-ready changelog.
 
-Before I do that, a little note on versioning. Have you ever wondered how versioning works? Download a module or an app and it will have a version number. Giving a version number to a piece of software is not mandatory. Done right, it can help you track down dependencies and lock down a release to the specific versions that you know work together.
+Before I do that, a little note on Semantic Version and Conventional Commits. 
 
-[SemVer](https://semver.org/) is one common approach to assigning version numbers. [CalVer](https://calver.org/) is one alternative. With the former, versions numbers take the form; MAJOR.MINOR.PATCH, where all three parts are numbers.
+Have you ever wondered how versioning works? Download a module or an app and it will have a version number. Giving a version number to a piece of software is not mandatory. Done right, it can help you track down dependencies and lock down a release to the specific versions that you know work together.
+
+[SemVer](https://semver.org/) is one common approach to assigning version numbers. [CalVer](https://calver.org/) is one alternative amongst others. With SemVer, versions numbers take the form; MAJOR.MINOR.PATCH, where all three parts are numbers.
 
 Generally, these are `[Breaking changes].[Backward compatible changes].[Bug fixes]`. Thus 2.4.5 could mean 2 breaking changes, 4 features and 5 bug or other fixes.
 
-Now conventional commits are a formalized method of constructing commit messages. It dovetails well with SemVer to give you a well-structured commit history. Deriving a structured changelog from your commits becomes easier at this point. Using this your commit messages would take the form:
+Conventional commits are a formalized method of constructing commit messages. It dovetails well with SemVer to give you a well-structured commit history. Deriving a structured changelog from your commits becomes easier at this point. Using this your commit messages would take the form:
 
 `<type>[optional scope]: <description>`
 
