@@ -8,6 +8,8 @@ imageAttr: ""
 tags:
   - post
 ---
+# Dear Change Log: Part 2 of 2
+
 In the previous post, I described what a changelog was, why they were important and how to make an albeit simple one.
 
 In this post, I'll talk about one way of generating a production-ready changelog.
