@@ -8,6 +8,8 @@ imageAttr: ""
 tags:
   - post
 ---
+# Dear Change Log: Part 1 of 2
+
 A changelog is like a captains log for your repository. It is a simplified history of all the work. Changelogs derive from your commit messages. Creating good quality commit messages will, in turn, lead to beautiful changelogs. They are usually saved as markdown files, making them easier to read and format. It's common to store them at the root level of your project.
 
 There are tools that help you to make commits messages in a consistent way. For example, for VScode there is the [Commitizen](https://marketplace.visualstudio.com/items?itemName=KnisterPeter.vscode-commitizen) extension. It will guide you through making well-documented commits.
