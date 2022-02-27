@@ -37,3 +37,7 @@ a.active {
 .figure__caption a {
   color: #e8eff2;
 }
+
+.codepen-embed-body {
+  margin-bottom: 1rem;
+}
