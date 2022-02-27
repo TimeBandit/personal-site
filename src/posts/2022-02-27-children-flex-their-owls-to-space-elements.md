@@ -37,6 +37,7 @@ Select any element that is the immediate sibling of any element that is the chil
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+This method works quite well and add a gap between sibling elements and not against the border of the container.
 
 ## Flex Gap
 
