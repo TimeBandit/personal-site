@@ -43,6 +43,7 @@ The `>` symbol selects children with a specific parent. The `*` symbol selects a
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
 This method works quite well and adds a gap between sibling elements and not against the border of the container.
 
 ## Flex Gap
