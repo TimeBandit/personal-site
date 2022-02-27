@@ -45,8 +45,6 @@ The `>` symbol selects children with a specific parent. The `*` symbol selects a
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 This method works quite well and adds a gap between sibling elements and not against the border of the container.
 
-.
-
 ## Flex Gap
 
 The final method is the `gap` property of flex items. This assumes you are not distributing the alignment using the `justify-conten`t property.
@@ -59,7 +57,5 @@ The final method is the `gap` property of flex items. This assumes you are not d
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 This method is also the newest.
-
-
 
 I've covered three methods of spacing elements. Which one will you choose?
