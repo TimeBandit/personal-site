@@ -37,7 +37,7 @@ Select any element that is the immediate sibling of any element that is the chil
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-<br>
+
 ## Flex Gap
 
 The final method is the gap property of flex items. This assumes you are not distributing the alignment using the justify-content property.
