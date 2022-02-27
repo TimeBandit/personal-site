@@ -9,6 +9,8 @@ imageAttr: 'Photo by <a href="https://unsplash.com/@rikonavt">Rikonavt</a> on <a
 tags:
   - post
 ---
+# Go Logical With CSS
+
 Imagine you're building a house. What would that look like? Let's say you follow an architectural plan. Where would you begin?
 
 Would you start at the foundations, building up the walls to match the plan? You could construct the roof in one piece and place it on top of the walls when complete. Good; now the interior isn't exposed to the elements from above anymore.
