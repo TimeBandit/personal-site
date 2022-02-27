@@ -20,16 +20,20 @@ This first approach applies margin to the child elements themselves.
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
-The problem with this is that you must remember to cancel out that final margin with an extra line of CSS. There is an argument that a child element should not be responsible for its own layout. The argument goes that the parent container should do this.
+The problem with this is that you must remember to cancel out that final margin with an extra line of CSS. Otherwise one of the margins will double up with the padding of the container. There is an argument that a child element should not be responsible for its own layout. The argument goes that the parent container should do this.
 
 ## Owls
 
 A neater way is to use an owl. Take this line or CSS
 
-.container >   *+* 
+`.container >  * + *`
 
-It's named an owl because the last three characters resemble the animal. To understand what it doesn't it's best to read it backwards. The > symbol selects children with a specific parent. The * symbol selects any element and the + symbol selects an immediate sibling. Reading it from right-to-left it:
-Select any element that is the immediate sibling of any element that is the child of a container.
+It's named an owl because the last three characters resemble the animal. 
+
+The `>` symbol selects children with a specific parent. The `*` symbol selects any element and the `+` symbol selects an immediate sibling. Reading it from right-to-left it says:
+
+>
+> Select any element that is the immediate sibling of any element that is the child of a container.
 
 <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="MWOPeJd" data-user="timeband-it" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/timeband-it/pen/MWOPeJd">
@@ -37,11 +41,11 @@ Select any element that is the immediate sibling of any element that is the chil
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-This method works quite well and add a gap between sibling elements and not against the border of the container.
+This method works quite well and adds a gap between sibling elements and not against the border of the container.
 
 ## Flex Gap
 
-The final method is the gap property of flex items. This assumes you are not distributing the alignment using the justify-content property.
+The final method is the `gap` property of flex items. This assumes you are not distributing the alignment using the `justify-conten`t property.
 
 <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="ExbdKLM" data-user="timeband-it" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/timeband-it/pen/ExbdKLM">
@@ -49,3 +53,9 @@ The final method is the gap property of flex items. This assumes you are not dis
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+This method is also the newest.
+
+
+
+I've covered three methods of spacing elements. Which one will you choose?
