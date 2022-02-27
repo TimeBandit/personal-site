@@ -10,6 +10,8 @@ imageAttr: ""
 tags:
   - post
 ---
+# How To Flex Your Pseudo Elements
+
 If you've created layouts in CSS you would have come across the \`display\` property known as Flexbox. Its introduction made it easier to space out and size your elements in one dimension; horizontal or vertical. 
 
 Previous to this, developers used the `float` property to pop their elements out of the normal flow of the page. It made them behave like buoyant objects floating to the top of a body of water and then moving to the left or the right. It worked, but elements on the next row would sometimes get stuck on the back of a tall item above it. Hacks had to be used to get around this.
