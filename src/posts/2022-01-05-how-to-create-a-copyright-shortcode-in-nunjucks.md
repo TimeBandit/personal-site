@@ -9,6 +9,8 @@ imageAttr: ""
 tags:
   - post
 ---
+# Short and Sweet with Shortcodes, Nunjucks and Eleventy
+
 In this brief post, I'll describe the process of automating your website copyright notice with Eleventy (11ty).
 
 ## Intro
