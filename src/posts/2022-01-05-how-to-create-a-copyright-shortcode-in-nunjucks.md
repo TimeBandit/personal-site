@@ -8,6 +8,7 @@ imageAlt: Lil kitty woke up in the dark
 imageAttr: ""
 tags:
   - post
+  - code
 ---
 # Short and Sweet with Shortcodes, Nunjucks and Eleventy
 
