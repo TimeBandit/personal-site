@@ -6,6 +6,7 @@ imageAlt: image
 imageAttr: ""
 tags:
   - post
+  - code
 ---
 # Children Flex Their Owls To Space Elements
 

@@ -7,6 +7,7 @@ imageAlt: Cat in a tube
 imageAttr: ""
 tags:
   - post
+  - code
 ---
 # Dear Change Log: Part 2 of 2
 

@@ -9,6 +9,7 @@ imageAlt: Beautiful ornamental cherry (pseudo-sakura) in a russian garden
 imageAttr: ""
 tags:
   - post
+  - code
 ---
 # How To Flex Your Pseudo Elements
 

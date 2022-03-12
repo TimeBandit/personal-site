@@ -7,6 +7,7 @@ imageAlt: image
 imageAttr: ""
 tags:
   - post
+  - code
 ---
 # Dear Change Log: Part 1 of 2
 
